@@ -1,0 +1,26 @@
+<p>table works!</p>
+
+<div>
+    <table style="border:1px solid black">
+      <tr>
+        <th>First Name</th>
+        <th>Last name</th>
+        <th>Dropdown</th>
+        <th>Religion</th>
+        <th>Date</th>
+        <th>Checkbox</th>
+      </tr>
+      <tr *ngFor="let arr of data">
+        <td>{{arr.fname}}</td>
+        <td>{{arr.lname}}</td>
+        <td>{{arr.dropdown}}</td>
+        <td>{{arr.religion}}</td>
+        <td>{{arr.date}}</td>
+        <td>{{arr.box}}</td>
+      </tr>
+    
+    </table>
+   </div>
+
+<br><br> 
+

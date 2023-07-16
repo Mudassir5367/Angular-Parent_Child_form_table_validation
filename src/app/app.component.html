@@ -1,0 +1,91 @@
+<app-form (formSubmit)="formSubmit($event)"></app-form>
+<app-table [data]="formReceived"></app-table>
+
+<!-- <app-form></app-form>
+<app-table></app-table> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  
+  
+  <form #templateForm="ngForm" (ngSubmit)="test(templateForm.value)">
+
+    <div *ngFor="let form of forms">
+      <label>First Name:</label><br>
+           <input type="text" placeholder="firstname"  name="fname" [(ngModel)]="formData.fname"><br>
+        <span style="color: red;" *ngIf="fNameValid">plz enter firstname</span>
+        <br> 
+        
+
+        <label>Last Name:</label><br>
+        <input type="text"  placeholder="lastname" id="lname" name="lname"[(ngModel)]="formData.lname" > <br>
+        <span style="color: red" *ngIf="lNameValid">plz enter lastname </span>
+        <br> 
+    
+
+        <label>Select one Province:</label><br>
+        <select name="dropdown" [(ngModel)]="formData.dropdown">
+           <option value="1">Pakistan</option>
+           <option selected value="2">Punjab</option>    
+           <option value="3">KPK</option>
+           <option value="4">Sindh</option>
+           <option value="5">Balochistan</option>
+        </select><br>
+        <span style="color: red;" *ngIf="selectValid">Plz select below</span><br>
+   
+        <label >Select the religion<br>
+        <span style="color: red;" *ngIf="religionValid">Choose one religion</span><br>
+        <input type="radio" id="one" [(ngModel)]="formData.religion"  value="Muslim"  name="religion">Muslim<br>
+        <input type="radio" id="two" [(ngModel)]="formData.religion"  value="NonMuslim" name="religion">Non-Muslim
+        </label><br>
+        <br>
+      
+   
+        <input type="date" name="date" id="date" [(ngModel)]="formData.date"><br>
+        <span style="color: red;" *ngIf="dateValid">Choose the date</span><br>
+       
+   
+        <label  for="">Select the Subject<br>
+            <span style="color: red;" *ngIf="boxValid">Plz choose the below boxes</span><br>
+        <input type="checkbox" name="box" [(ngModel)]="formData.box">Math <br>
+        <input type="checkbox" name="box" [(ngModel)]="formData.box">Physics <br>
+        <input type="checkbox" name="box" [(ngModel)]="formData.box">Chemistry <br>
+        <input type="checkbox" name="box" [(ngModel)]="formData.box">Engilsh </label><br><br> 
+        <button>Submit</button><br>
+        
+        
+     </div>
+     
+   </form> <br><br> -->
+
+   <!-- <div>
+    <table style="border:1px solid black">
+      <tr>
+        <th>First Name</th>
+        <th>Last name</th>
+        <th>Dropdown</th>
+        <th>Religion</th>
+        <th>Date</th>
+        <th>Checkbox</th>
+      </tr>
+      <tr *ngFor="let arr of formArr">
+        <td>{{arr.fname}}</td>
+        <td>{{arr.lname}}</td>
+        <td>{{arr.dropdown}}</td>
+        <td>{{arr.religion}}</td>
+        <td>{{arr.date}}</td>
+        <td>{{arr.box}}</td>
+      </tr>
+    
+    </table>
+   </div>
+
+<br><br>  
+</body>
+</html> -->
